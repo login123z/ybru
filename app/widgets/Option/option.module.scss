@@ -1,0 +1,138 @@
+@import '../../shared/styles/mixins.scss';
+
+.root {
+    @include root;
+    @media (max-width: 1200px){
+        max-height: 584px;
+    }
+    @media (max-width: 760px){
+        max-height: 462px;
+    }
+    &__container {
+        @include container;
+        background: url(/fone.png) no-repeat ;
+        background-size: cover;
+        background-position: center;
+        background-color: #f2f4fc;
+        overflow: hidden;
+        padding-inline: 0!important;
+        padding-block: 70px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        @media(max-width: 1200px){
+            padding-block: 40px;
+        }
+    }
+    &__content {
+        
+        &Title {
+            color: black;
+            font-size: 48px;
+            line-height: 52.8px;
+            padding-left: 75px;
+            @media (max-width: 768px){
+                font-size: 28px;
+                padding-left: 0;
+            }
+            @media (max-width: 760px){
+                line-height: 30.8px;
+            }
+        }
+        &Top {
+            padding-left: 50%;           
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-height: 178px;
+            @media (max-width: 760px){
+                padding-left: 10px;
+            }
+        }
+        &Pagination {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0 70px 0 0;
+            @media (max-width: 1200px){
+                padding: 0 16px 0 0;
+            }
+            @media (max-width: 320px){
+                display: none;
+            }
+            &Left {
+                width: 50px;
+                height: 50px;
+                background-color: #e5e9f9;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                @media (max-width: 1200px){
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+            &Right {
+                width: 50px;
+                height: 50px;
+                background-color: #e5e9f9;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                @media (max-width: 1200px){
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+        }
+    }
+
+    &__ArrowRightImg {
+        width: 22px;
+        height: 14px;
+        @media (max-width: 1200px) {
+            width: 16px;
+            height: 10px;
+        }
+    }
+    &__ArrowLeftImg {
+        width: 22px;
+        height: 14px;
+        @media (max-width: 1200px) {
+            width: 16px;
+            height: 10px;
+        }
+    }
+
+    &__list {
+        justify-content: center;
+        padding-bottom: 70px;
+        display: flex;
+        gap: 50px;
+        height: 100%;
+        margin-top: 70px!important;
+        width: 100vw;
+        padding-right: 353px!important;
+        @media (max-width: 1200px){
+            margin-top: 40px!important;
+        }
+        @media (max-width: 760px){
+            padding-inline: 70px;
+            padding-right: 0px!important;
+            margin-top: 18px!important;
+        }
+        > div{
+            padding-left: 275px;
+            @media (max-width: 1200px){
+                padding-left: 120px;
+            }
+            @media (max-width: 768px) {
+                padding-left: 0px;
+            }
+        }
+    }
+}

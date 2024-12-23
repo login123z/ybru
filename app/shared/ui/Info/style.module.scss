@@ -1,0 +1,27 @@
+.News__item_top{
+    margin-bottom:70px;
+    list-style: none;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: #000;
+}
+
+    @media (max-width: 768px) {
+    .News__list {
+       display: flex;
+       justify-content: space-between;
+    }
+}
+
+
+.News__item{
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: #a6acc8;
+
+}

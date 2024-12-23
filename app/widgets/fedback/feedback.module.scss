@@ -1,0 +1,153 @@
+@import '../../shared/styles/mixins.scss';
+
+@mixin sd{
+    @media (max-width: 700px) {
+        @content;
+    }
+}
+@mixin md{
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin lg{
+    @media screen and (max-width: 1580) {
+        @content;
+    }
+}
+
+.feedback{
+    @include root;
+    max-height: 708px;
+    @media (max-width: 1200px) {
+        max-height: 464px;
+    }
+    @media (max-width: 760px){
+        max-height: 682px;
+    }
+    &__container{
+        width: 100%;
+        display: flex;
+        @include container;
+    
+        justify-content: space-between;
+        gap: 22px;
+        background-color: #E5E9F9;
+        @include sd{
+            flex-direction: column-reverse;
+            padding: 20px 10px;
+        }
+    }
+    &__title{
+        margin-bottom: 50px;
+        text-align: left;
+        font-size: 48px;
+        width: 100%;
+        @include md{
+            margin-bottom: 40px;
+            font-size: 24px;
+        }
+        @include sd{
+            margin-bottom: 20px;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    &__input{
+        padding:  0 20px;
+        height: 80px;
+        width: 100%;
+        margin-bottom: 15px;
+        background-color: #F2F4FC;
+        border: none;
+        border-radius: 14px;
+        color: #A6ACC8;
+        font-size: 24px;
+        @include md{
+            height: 42px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        &::placeholder{
+            color: #A6ACC8;
+            font-size: 24px;
+            margin-block: auto;
+            font-weight: 500;
+            @include md{
+                font-size: 16px;
+            
+            }
+        }
+        &:focus-visible{
+            outline: none;
+        }
+    }
+    &__button{
+        margin-top: 20px;
+        width: 100%;
+        max-width: 380px;
+        padding-block: 20px;
+        background-color: #000;
+        border: none;
+        border-radius: 40px;
+        text-transform: uppercase;
+        @include md{
+            margin-top: 6px;
+        }
+        @include sd{
+            max-width: 100%;
+        }
+    }
+    &__checkbox{
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        font-size: 12px;
+        &Container{
+            margin-top: 50px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 25px;
+            @include md{
+                margin-top: 0;
+            }
+        }
+    }
+    &__label{
+        font-size: 12px;
+    }
+    &__right{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        max-width: 798px;
+        @media(max-width: 1200px){
+            justify-content: flex-start;
+        }
+        @include sd{
+            width: 100%;
+        }
+    }
+    &__left{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        @include sd{
+            width: 100%;
+        }
+    }
+    &__image{
+        max-width: 694px;
+        object-fit: contain;
+        height: 100%;
+        @media (max-width: 768px){
+            width: 100%;
+        }
+    }
+}

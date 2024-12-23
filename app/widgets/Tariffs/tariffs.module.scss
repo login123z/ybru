@@ -1,0 +1,92 @@
+@import '../../shared/styles/mixins.scss';
+
+.root{
+    @include root;
+    flex-direction: column;
+    max-height: 1033px;
+    @media (max-width: 1200px){
+        max-height: 804px;
+    }
+    &__container{
+        height: 100%;
+        background-color: #F2F4FC;
+        @include container;
+        padding-inline: 0!important;
+        padding-block: 80px;
+        @media (max-width: 1200px){
+            padding-block: 40px;
+        }
+        @include md{
+            padding-block: 20px;
+        }
+    }
+    &__content{
+        gap: 20px;
+        padding-inline: 70px!important;
+        display: flex;
+        @media(max-width: 1200px){
+            padding-inline: 16px!important;
+        }
+        @media (max-width: 768px){
+            padding-inline: 10px!important;
+        }
+    }
+    &__title{
+        font-size: 48px;
+        color: #000;
+        @media(max-width: 1200px){
+            font-size: 28px;
+        }
+    }
+    &__headBlock{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 70px;
+    }
+    &__header{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 70px;
+        @media(max-width: 768px){
+            margin-bottom: 40px;
+            padding-inline: 0px;
+            padding-right: 10px;
+        }
+    }
+    &__list{
+        display: flex;
+        gap: 8px;
+        
+        @media (max-width: 320px){
+            display: none;
+        }
+    }
+    &__item{
+        list-style: none;
+    }
+    &__button{
+        $size: 60px;
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        background-color: #E5E9F9;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media(max-width: 1200px){
+            $size: 28px;
+            width: $size;
+            height: $size;
+        }
+        &Image{
+            @media(max-width: 1200px){
+                width: 16px;
+                height: 10px;
+            }
+        }
+    }
+    
+}
