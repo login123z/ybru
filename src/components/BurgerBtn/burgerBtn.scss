@@ -1,0 +1,48 @@
+.burgerMenu{
+    display: none;
+}
+
+.burger__nav{
+    display: none;
+}
+
+// 768 
+    @media (max-width: 768px) {
+        .burgerMenu {
+                display: block;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .burger{
+            
+            
+            &__nav {
+                position: absolute;
+                display: block;
+                padding: 70px 16px;
+                top: 65px;
+                left: 0;
+                width: 100%;
+                height: 800px;
+                border-radius: 20px;
+                background-color: #F2F4FC;
+                font-size: 32px;   
+                
+            }
+
+            &__list{
+                margin-bottom: 125px;
+                &-item{
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                }
+            }
+
+            &__contact{
+                margin-bottom: 150px;
+            }
+
+        }
+    }
+

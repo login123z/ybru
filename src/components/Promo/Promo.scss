@@ -1,0 +1,75 @@
+.promo{
+    margin:50px 0;
+    background-image: url(../../assets/bgi-promo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 797px;
+    border-radius: 20px;
+    background-color: rgb(57, 128, 255);
+    background-size: cover;
+}
+
+.promo-wrapper{
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.promo-title{
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 103.1%;
+    margin-bottom: 20px;
+}
+
+.slogan-box__item{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-bottom: 38px;
+}
+
+.box-item__text{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 148.6%;
+}
+
+.promo-btn__box{
+    display: flex;
+    gap: 26px;
+}
+
+.red-btn{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 148.6%;
+    text-align: center;
+    padding: 24px 43px;
+    background: rgb(235, 87, 87);
+    border-radius: 10px;
+}
+
+.blue-btn{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 148.6%;
+    text-align: center;
+    padding: 24px 43px;
+    background: rgb(12, 74, 179);
+    border-radius: 10px;
+}
+
+@media(max-width: 374px){
+    .promo-title{
+        font-size: 42px;
+        font-weight: 500;
+    }
+}
+

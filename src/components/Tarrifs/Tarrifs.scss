@@ -1,0 +1,124 @@
+.price{
+    
+}
+
+.price-title{
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 103.1%;
+    text-align: center;
+    margin-bottom: 39px;
+}
+
+.price-subtitle{
+    color: rgba(0, 0, 0, 0.69);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 128.1%;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.price-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-box__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.09),0px 1px 1px 0px rgba(0, 0, 0, 0.09),0px 2px 2px 0px rgba(0, 0, 0, 0.08),0px 5px 3px 0px rgba(0, 0, 0, 0.05),0px 9px 4px 0px rgba(0, 0, 0, 0.01),0px 14px 4px 0px rgba(0, 0, 0, 0);
+    background: rgb(255, 255, 255);
+    padding: 36px 86px 44px 72px;
+    border: 1px solid rgba(172, 172, 172, 0.88);
+}
+
+
+.price-box__title{
+    display: flex;
+    align-items: flex-end;
+    gap: 19px;
+    margin-bottom: 31px;
+}
+
+.price-box__text{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 128.1%;
+}
+
+.services-element__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.services-element__list-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.list-item__text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 128.1%;
+}
+
+.price-btn__box{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.price-text{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 128.1%;
+    text-align: center;
+}
+
+.price-btn{
+    color: rgb(57, 128, 255);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 148.6%;
+    padding: 24px 43px;
+    box-sizing: border-box;
+    border: 1px solid rgb(57, 128, 255);
+    border-radius: 10px;
+    transition: all .3s;
+    width: 268px;
+}
+
+.price-btn:hover{
+    color: #fff;
+    background-color:  rgb(57, 128, 255);
+}
+
+
+@media (max-width: 1374px) {
+    .price-box {
+        flex-direction: column;
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 1374px) {
+    .price-box__item {
+       padding: 36px 15px 34px 15px;
+    }
+}
+
+
+
+
+@media (max-width: 1374px) {
+    .price-title {
+        font-size: 38px;
+    }
+}

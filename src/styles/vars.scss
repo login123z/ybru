@@ -1,0 +1,20 @@
+:root {
+    // Container
+
+    // Color
+    --colorBlack: #000000;
+    --colorWhite: #FFFFFF;
+
+    --colorHeader: #E5E9F9;
+    --colorBtn: #C3C8E0;
+
+
+
+    // Font
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: var(--textColor);
+    font-family: var(--font-family);
+}

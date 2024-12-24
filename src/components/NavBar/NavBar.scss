@@ -1,0 +1,53 @@
+.menu{
+    display: flex;
+    align-items: center;
+
+    gap: 110px;
+
+    @media (max-width: 1600px) {
+        .menu {
+            gap: 78px;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        gap: 58px;
+    }
+}
+
+// 1600px
+    @media (max-width: 1600px) {
+        .menu {
+            gap: 78px;
+        }
+    }
+
+        @media (max-width: 1600px) {
+        .menu__list {
+            gap: 40px;
+        }
+    }
+
+// 1080px
+    @media (max-width: 1080px) {
+        .menu {
+            gap: 36px;
+        }
+    }
+
+    @media (max-width: 1600px) {
+        .menu__list {
+            gap: 16px;
+        }
+    }
+
+// 768px 
+    @media (max-width: 768px) {
+        .menu {
+            display: none;
+        }
+    }
+
+    

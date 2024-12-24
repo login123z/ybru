@@ -1,0 +1,49 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 14px 70px;
+    border-radius: 20px;
+
+    background-color: var(--colorHeader);
+}
+
+.header__logo{
+    width: 30px;
+    height: 50px;
+    
+}
+
+// 1600px
+    @media (max-width: 1600px) {
+        .header {
+                padding: 14px 54px;
+        }
+    }
+
+    @media (max-width: 1080px) {
+        .header__logo {
+                width: 183px;
+        }
+    }
+
+
+
+
+// 1080px
+    @media (max-width: 1080px) {
+        .header {
+                padding: 14px 34px;
+        }
+    }
+
+    @media (max-width: 1080px) {
+        .header__logo {
+                width: 153px;
+        }
+    }
+
+    
+    

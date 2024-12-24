@@ -1,0 +1,218 @@
+.order{
+    margin: 105px 0;
+}
+
+.order-title{
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 103.1%;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.budget-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 128.1%;
+    margin-bottom: 26px;
+}
+
+.budget-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 88px;
+}
+
+.budget-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.budget-btn{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 128.1%;
+    border: 1px solid rgb(57, 128, 255);
+    border-radius: 93px;
+    padding: 43px 66px;
+    width: 315px;
+}
+
+.budget-btn:focus{
+    background-color: rgb(57, 128, 255);
+    color: #fff;
+    transition: all .3s;
+}
+
+.budget-btn__first{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 128.1%;
+    border: 1px solid rgb(57, 128, 255);
+    border-radius: 93px;
+    padding: 43px 57px;
+    width: 315px;
+}
+
+.budget-btn__first:focus{
+    background-color: rgb(57, 128, 255);
+    color: #fff;
+    transition: all .3s;
+}
+
+.budget-btn__second{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 128.1%;
+    border: 1px solid rgb(57, 128, 255);
+    border-radius: 93px;
+    padding: 43px 32px;
+    width: 315px;
+}
+
+.budget-btn__second:focus{
+    background-color: rgb(57, 128, 255);
+    color: #fff;
+    transition: all .3s;
+}
+
+.form-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 128.1%;
+    margin-bottom: 35px;
+}
+
+.form-order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-order__name{
+    border: 1px solid rgba(172, 172, 172, 0.88);
+    border-radius: 10px;
+    width: 417px;
+    height: 64px;
+    padding-left: 34px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 128.1%;
+}
+
+.form-order__name:focus{
+    border: 2px solid rgb(57, 128, 255);
+}
+
+.form-order__name::placeholder{
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 128.1%;
+}
+
+.form-order__phone{
+    border: 1px solid rgba(172, 172, 172, 0.88);
+    border-radius: 10px;
+    width: 417px;
+    height: 64px;
+    padding-left: 34px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 128.1%;
+}
+
+.form-order__phone:focus{
+    border: 1px solid rgba(172, 172, 172, 0.88);
+    border: 2px solid rgb(57, 128, 255);
+}
+
+.form-order__phone::placeholder{
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 128.1%;
+}
+
+.form-order__text{
+    resize: none;
+    max-width: 420px;
+    width: 417px;
+    height: 201px;
+    border: 1px solid rgba(172, 172, 172, 0.88);
+    border-radius: 10px;
+    padding-top: 22px;
+    padding-left: 34px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 128.1%;
+
+}
+
+.form-order__text:focus{
+    border: 2px solid rgb(57, 128, 255);
+}
+
+.form-order__text::placeholder{
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 128.1%;
+}
+
+.form-btn{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 148.6%;
+    text-align: center;
+    padding: 24px 43px;
+    border-radius: 10px;
+    background: rgb(57, 128, 255);
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1374px) {
+    .budget-box {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 1374px) {
+    .budget-list {
+        flex-direction: column;
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 1374px) {
+    .order-title {
+       font-size: 32px;
+    }
+}
+
+
+@media (max-width: 1374px) {
+    .form-order__name,
+    .form-order__phone,
+    .form-order__text {
+       width: 290px;
+    }
+}
